@@ -21,7 +21,7 @@
                         <p class="pull-left h2-color mtb-10 hidden-sm hidden-xs"> Welcome to k2computer! </p>
                         <div class="account-menu text-right pull-right mt-10">
                             <ul>
-                                <li><a href="#">My Account</a></li>
+                                <li><a href="{{url('account-login')}}">My Account</a></li>
                                 <li><a href="{{url('checkout')}}">Checkout</a></li>
                                 <li><a href="#">Shopping Cart</a></li>
                                 @if(session('m_id')>0)

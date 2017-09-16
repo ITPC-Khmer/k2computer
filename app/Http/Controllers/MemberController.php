@@ -14,7 +14,7 @@ class MemberController extends Controller
             $m_id = $request->session()->get('m_id');
             if($m_id>0){
                 $m = SaleOrder::saveData($request,$m_id);
-                return 'OK';
+                return redirect('thanks');
             }
         }
 
@@ -24,7 +24,7 @@ class MemberController extends Controller
 
 
             $m = SaleOrder::saveData($request,$m->id);
-            return 'OK';
+            return redirect('thanks');
         }
 
         return 'NO';

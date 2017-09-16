@@ -65,6 +65,32 @@ Route::get('/checkout',function (){
     return view('frontend.web.chat',['items' => $cartCollection,'cartTotal' => Cart::getTotal()]);
 });
 
+Route::get('/thanks',function (){
+    return view('thanks');
+});
+
+Route::get('/account-login',function (){
+    return view('account-login');
+});
+
+Route::post('/account-login',function (\Illuminate\Http\Request $request){
+    $m = \App\Member::memberRegister($request);
+    if($m != null) {
+        return view('account-login');
+    }else{
+        return redirect()->back();
+    }
+});
+
+Route::post('/account-register',function (\Illuminate\Http\Request $request){
+    $m = \App\Member::memberRegister($request);
+    if($m != null) {
+        return view('account-login');
+    }else{
+        return redirect()->back();
+    }
+});
+
 Route::post('/checkout','MemberController@Checkout');
 
 Route::group(['namespace'=>'Frontend'],function(){

@@ -90,26 +90,28 @@
                                     <form action="{{url('checkout')}}" method="post">
 
                                         {{ csrf_field() }}
+                                        @if(!(session('m_id')>0))
+
 										<span class="form-row-first">
 											<b>First Name <span class="required">*</span></b>
-											<input name="first_name" type="text">
+											<input name="first_name" type="text" required>
 										</span>
                                         <span class="form-row-last">
 											<b>Last Name <span class="required">*</span></b>
-											<input name="last_name" type="text">
+											<input name="last_name" type="text" required>
 										</span>
                                         <span class="form-row-first">
 											<b>Phone Number <span class="required">*</span></b>
-											<input name="phone" type="text">
+											<input name="phone" type="text" required>
 										</span>
                                         <span class="form-row-last">
 											<b>Email Address <span class="required">*</span></b>
-											<input name="email" type="email">
+											<input name="email" type="email" required>
 										</span>
 
                                         <span class="form-row-first">
 											<b>Password <span class="required">*</span></b>
-											<input name="password" type="password">
+											<input name="password" type="password" required>
 										</span>
 
                                         <span class="form-row-last">
@@ -120,6 +122,8 @@
 											<b>Address <span class="required">*</span></b>
 											<input name="address" placeholder="Street address" type="text">
 										</span>
+
+                                        @endif
                                         <span>
 											<b>Order Notes</b>
 											<textarea name="note" id="#" style="width: 100%;" rows="5" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
