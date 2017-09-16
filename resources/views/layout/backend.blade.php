@@ -1,8 +1,7 @@
 @php
     $base_url = asset('them/backend');
 @endphp
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <!--<![endif]-->
@@ -381,7 +380,7 @@
                     <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                     <li class="dropdown dropdown-user">
 
-                            <a href="{{ url('login') }}">
+                            <a href="{{ url('logout') }}">
                                 <i class="icon-key"></i> Log Out </a>
                     </li>
                     <!-- END QUICK SIDEBAR TOGGLER -->
