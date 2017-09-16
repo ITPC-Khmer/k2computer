@@ -176,6 +176,8 @@ Route::post('/account-register',function (\Illuminate\Http\Request $request){
     }
 });
 
+Route::get('/backend/search-item','Backend\ItemController@search_item');
+
 Route::post('/checkout','MemberController@Checkout');
 
 Route::group(['namespace'=>'Frontend'],function(){
@@ -226,7 +228,7 @@ Route::group(['prefix'=>'backend','namespace'=>'Backend','middleware' =>['admin'
     Route::get('/brand-delete.html/{id}','BrandController@delete');
     // Item
     Route::get('/item.html','ItemController@index');
-    Route::get('/search-item','ItemController@search_item');
+
     //Route::get('/item-sale.html','ItemController@sale');
     Route::get('/item-form.html','ItemController@form');
     Route::any('/item-save.html','ItemController@save');
