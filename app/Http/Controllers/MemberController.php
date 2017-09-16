@@ -18,9 +18,11 @@ class MemberController extends Controller
             }
         }
 
-        $m = Member::saveData($request);
+        $m = Member::memberRegister($request);
 
         if($m != null){
+
+
             $m = SaleOrder::saveData($request,$m->id);
             return 'OK';
         }

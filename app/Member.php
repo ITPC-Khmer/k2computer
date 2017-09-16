@@ -42,7 +42,7 @@ class Member extends Model
     public static function memberRegister($request){
 
         $m = self::saveData($request);
-        if($m){
+        if($m != null){
             session([
                 'm_id' => $m->id,
                 'm_first_name' => $m->first_name,
@@ -52,7 +52,13 @@ class Member extends Model
                 'm_company_name' => $m->company_name,
                 'm_address' => $m->address,
             ]);
+
+            return $m;
+        }else{
+            return null;
         }
+
+
 
     }
 

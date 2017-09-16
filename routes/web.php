@@ -1,7 +1,10 @@
 <?php
 Route::get('login','LoginController@index');
 Route::post('login','LoginController@login');
+
 Route::get('logout','LoginController@logout');
+
+Route::get('m_logout','LoginController@m_logout');
 
 Route::get('add-cart',function (\Illuminate\Http\Request $request){
     // array format

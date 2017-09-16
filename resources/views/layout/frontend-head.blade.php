@@ -1,9 +1,10 @@
 <header>
-    <!--<div class="header-top-area bb hidden-xs">
+    <div class="header-top-area bb hidden-xs">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                    <div class="language-menu dropdown">
+                    {{--<div class="language-menu dropdown">
                         <ul>
                             <li><a href="#">eng <i class="fa fa-angle-down"></i></a>
                                 <ul>
@@ -13,7 +14,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </div>
+                    </div>--}}
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
                     <div class="header-top-right">
@@ -21,16 +22,20 @@
                         <div class="account-menu text-right pull-right mt-10">
                             <ul>
                                 <li><a href="#">My Account</a></li>
-                                <li><a href="#">Checkout</a></li>
+                                <li><a href="{{url('checkout')}}">Checkout</a></li>
                                 <li><a href="#">Shopping Cart</a></li>
-                                <li><a href="#">Wishlist</a></li>
+                                @if(session('m_id')>0)
+                                <li><a href="{{url('m_logout')}}">Logout</a></li>
+                                @endif
+                                {{--<li><a href="#">Wishlist</a></li>--}}
                             </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>-->
+    </div>
 
 
     <div class="header-top-area ptb-30">
