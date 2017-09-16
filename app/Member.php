@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 
 class Member extends Model
 {
@@ -29,7 +30,7 @@ class Member extends Model
         $m->email = $request->email;
         $m->company_name = $request->company_name;
         $m->address = $request->address;
-        $m->password = bcrypt($request->password);
+        $m->password = Hash::make($request->password);
 
         if($m->save()){
             return $m;

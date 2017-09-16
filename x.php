@@ -1,10 +1,10 @@
 
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Account</title>
+    <title>Blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -433,58 +433,307 @@
     </div>
 </header>
 <!-- header end -->
-<div class="main-container shop-bg">
+<!-- blog-area start -->
+<div class="main-conatiner">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="account.html">My Account</a></li>
+                            <li class="active"><a href="blog.html">Blog</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <div class="account-title mb-20 text-center">
-                    <h1>My Account</h1>
+            <!-- single-blog start -->
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="blog-area">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper bg-fff box-shadow mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-3.html">
+                                        <img src="img/blog/1.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-3.html">hello world</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-1.html">
+                                        <img src="img/blog/2.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-1.html">Curabitur lobortis</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-2.html">
+                                        <img src="img/blog/3.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-2.html">Vivamus gravida</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-3.html">
+                                        <img src="img/blog/4.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-3.html">Post Format:Image</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-1.html">
+                                        <img src="img/blog/5.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-1.html">Vivamus cursus ornare ullamcorpe</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-2.html">
+                                        <img src="img/blog/4.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-2.html">Post Format: Audio</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="blog-img mb-25">
+                                    <a href="blog-details-3.html">
+                                        <img src="img/blog/4.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-3.html">Post Format: Audio</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="blog-img mb-25">
+                                    <div class="blog-active">
+                                        <div class="blog-img">
+                                            <a class="image-link" href="img/blog/1.jpg"><img src="img/blog/1.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="blog-img">
+                                            <a class="image-link" href="img/blog/2.jpg"><img src="img/blog/2.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="blog-img">
+                                            <a class="image-link" href="img/blog/3.jpg"><img src="img/blog/3.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="blog-img">
+                                            <a class="image-link" href="img/blog/4.jpg"><img src="img/blog/4.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="blog-img">
+                                            <a class="image-link" href="img/blog/5.jpg"><img src="img/blog/5.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-gallery.html">Post Format: Gallery</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="blog-wrapper  bg-fff box-shadow  mb-30">
+                                <div class="embed-responsive embed-responsive-16by9  mb-25">
+                                    <iframe src="https://www.youtube.com/embed/Bph709EqnHk" allowfullscreen=""></iframe>
+                                </div>
+                                <div class="blog-content">
+                                    <h3><a href="blog-details-vedio.html">Post Format: Video (YouTube)</a></h3>
+                                    <div class="blog-meta">
+                                        <span>April 18, 2016</span>
+                                        <span>0 Comment(s)</span>
+                                    </div>
+                                    <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- woocommerce-pagination-area -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="woocommerce-pagination-area bg-fff box-shadow ptb-10 mb-30">
+                                <div class="woocommerce-pagination text-center hover-bg">
+                                    <ul>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- woocommerce-pagination-area -->
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="account-heading mb-25">
-                    <h2>Login</h2>
-                </div>
-                <div class="account-form form-style p-20 mb-30 bg-fff box-shadow">
-                    <form action="#">
-                        <b>Username or email address <span>*</span></b>
-                        <input type="text" />
-                        <b>Password <span>*</span></b>
-                        <input type="password" />
-                    </form>
-                    <div class="login-button">
-                        <button>Login</button>
-                        <input type="checkbox" />
-                        <b>Remember me </b>
-                        <a href="#">Lost your password?</a>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <!-- Search-area -->
+                <div class="Search-area box-shadow bg-fff">
+                    <div class="product-title home2-bg-1 home2-product-title text-uppercase">
+                        <i class="fa fa-bookmark icon bg-4"></i>
+                        <h3>Search</h3>
+                    </div>
+                    <div class="search newsletter form-style plbr-15 mt-20">
+                        <form action="#">
+                            <input type="text" placeholder="Search...."/>
+                            <button><i class="fa fa-paper-plane-o"></i></button>
+                        </form>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="account-heading mb-25">
-                    <h2>Register</h2>
+                <!-- categories-area start -->
+                <div class="categories-area box-shadow mtb-30 bg-fff">
+                    <div class="product-title home2-bg-1 text-uppercase home2-product-title">
+                        <i class="fa fa-bookmark icon bg-4"></i>
+                        <h3>Categories</h3>
+                    </div>
+                    <div class="shop-categories-menu p-20">
+                        <ul>
+                            <li><a href="#">Creative</a></li>
+                            <li><a href="#">Image</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Uncategorized</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">WordPress</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="account-form form-style p-20 mb-30 bg-fff box-shadow">
-                    <form action="#">
-                        <b>Email address  <span>*</span></b>
-                        <input type="text" />
-                        <b>Password <span>*</span></b>
-                        <input type="password" />
-                    </form>
-                    <div class="login-button">
-                        <button>register</button>
+                <!-- comment-area -->
+                <div class="recent-comment-area box-shadow bg-fff mtb-30">
+                    <div class="product-title home2-bg-1 text-uppercase home2-product-title">
+                        <i class="fa fa-bookmark icon bg-4"></i>
+                        <h3>Recent post</h3>
+                    </div>
+                    <div class="comment  p-20-15 ">
+                        <div class="single-comments clear mb-20">
+                            <div class="comment-img floatleft">
+                                <a href="#"><img src="img/post/1.jpg" alt="" /></a>
+                            </div>
+                            <div class="comment-info">
+                                <a href="#">Hello world !</a>
+                                <span>January 29, 2016</span>
+                            </div>
+                        </div>
+                        <div class="single-comments clear mb-20">
+                            <div class="comment-img floatleft">
+                                <a href="#"><img src="img/post/2.jpg" alt="" /></a>
+                            </div>
+                            <div class="comment-info">
+                                <a href="#">Curabitur lobortis</a>
+                                <span>January 29, 2016</span>
+                            </div>
+                        </div>
+                        <div class="single-comments clear mb-20">
+                            <div class="comment-img floatleft">
+                                <a href="#"><img src="img/post/3.jpg" alt="" /></a>
+                            </div>
+                            <div class="comment-info">
+                                <a href="#">Vivamus gravida</a>
+                                <span>January 29, 2016</span>
+                            </div>
+                        </div>
+                        <div class="single-comments clear mb-20">
+                            <div class="comment-img floatleft">
+                                <a href="#"><img src="img/post/4.jpg" alt="" /></a>
+                            </div>
+                            <div class="comment-info">
+                                <a href="#">Post Format:Image</a>
+                                <span>January 29, 2016</span>
+                            </div>
+                        </div>
+                        <div class="single-comments clear mb-20">
+                            <div class="comment-img floatleft">
+                                <a href="#"><img src="img/post/5.jpg" alt="" /></a>
+                            </div>
+                            <div class="comment-info">
+                                <a href="#">Post Format: Gallery</a>
+                                <span>January 29, 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Meta-area start -->
+                <div class="Meta-area box-shadow bg-fff mb-30">
+                    <div class="product-title home2-bg-1 text-uppercase home2-product-title">
+                        <i class="fa fa-bookmark icon bg-4"></i>
+                        <h3>Meta</h3>
+                    </div>
+                    <div class="shop-categories-menu p-20">
+                        <ul>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Entries <span>RSS</span></a></li>
+                            <li><a href="#">Comments <span>RSS</span></a></li>
+                            <li><a href="#">WordPress.org</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

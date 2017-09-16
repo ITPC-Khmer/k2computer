@@ -17,7 +17,8 @@
                         <h2>Login</h2>
                     </div>
                     <div class="account-form form-style p-20 mb-30 bg-fff box-shadow">
-                        <form action="#">
+                        <form action="{{url('account-login')}}" method="post">
+                            {!! csrf_field() !!}
                             <b>Email address <span>*</span></b>
                             <input name="email"  type="text" required>
                             <b>Password <span>*</span></b>
@@ -37,7 +38,8 @@
                         <h2>Register</h2>
                     </div>
                     <div class="account-form form-style p-20 mb-30 bg-fff box-shadow">
-                        <form action="#">
+                        <form action="{{url('account-register')}}" method="post">
+                            {!! csrf_field() !!}
                             <b>First Name  <span>*</span></b>
                             <input name="first_name" type="text" required>
 

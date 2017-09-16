@@ -69,23 +69,108 @@ Route::get('/thanks',function (){
     return view('thanks');
 });
 
-Route::get('/account-login',function (){
-    return view('account-login');
+
+
+Route::get('/my-account',function (\Illuminate\Http\Request $request){
+    if(session('m_id')>0) {
+        $mo = \App\Models\ECBackend\SaleOrder::where('member_id',session('m_id'))
+            ->orderBy('id','DESC')
+            ->paginate(10);
+        return view('my_account',['mo' => $mo]);
+    }else{
+        return redirect('account-login');
+    }
 });
 
-Route::post('/account-login',function (\Illuminate\Http\Request $request){
-    $m = \App\Member::memberRegister($request);
-    if($m != null) {
-        return view('account-login');
+
+Route::get('/my-account/product-detail',function (\Illuminate\Http\Request $request){
+    if(session('m_id')>0) {
+        $id = $request->id;
+        $mo = \App\Models\ECBackend\SaleOrder::where('member_id',session('m_id'))
+            ->where('id',$id)->first();
+
+        return view('my_account-detail',['mo' => $mo]);
     }else{
-        return redirect()->back();
+        return redirect('account-login');
     }
+});
+
+
+Route::get('/my-account/change-password',function (\Illuminate\Http\Request $request){
+    if(session('m_id')>0) {
+
+        return view('my_account-change-password');
+    }else{
+        return redirect('account-login');
+    }
+});
+
+Route::post('/my-account/change-password',function (\Illuminate\Http\Request $request){
+    if(session('m_id')>0) {
+        $password_old = $request->password_old;
+        $password_new = $request->password_new;
+
+        $m = \App\Member::find(session('m_id'));
+
+        if($m != null){
+
+            if(\Illuminate\Support\Facades\Hash::check($password_old,$m->password))
+            {
+                $m->password = \Illuminate\Support\Facades\Hash::make($password_new);
+
+                $m->save();
+
+                return redirect('my-account');
+            }else{
+                return redirect()->back();
+            }
+
+        }
+
+    }else{
+        return redirect('account-login');
+    }
+});
+
+
+
+Route::get('/account-login',function (){
+    if(session('m_id')>0){
+        return redirect('my-account');
+    }else {
+        return view('account-login');
+    }
+});
+
+
+Route::post('/account-login',function (\Illuminate\Http\Request $request){
+    $m = \App\Member::where('email',$request->email)->first();
+
+    if($m != null){
+
+        if(\Illuminate\Support\Facades\Hash::check($request->password,$m->password))
+        {
+            session([
+                'm_id' => $m->id,
+                'm_first_name' => $m->first_name,
+                'm_last_name' => $m->last_name,
+                'm_phone' => $m->phone,
+                'm_email' => $m->email,
+                'm_company_name' => $m->company_name,
+                'm_address' => $m->address,
+            ]);
+            return redirect('my-account');
+        }
+
+    }
+
+    return redirect()->back();
 });
 
 Route::post('/account-register',function (\Illuminate\Http\Request $request){
     $m = \App\Member::memberRegister($request);
     if($m != null) {
-        return view('account-login');
+        return redirect('my-account');
     }else{
         return redirect()->back();
     }

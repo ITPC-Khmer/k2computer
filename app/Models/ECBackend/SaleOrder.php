@@ -23,6 +23,8 @@ class SaleOrder extends Model
         $m->require_date = DB::raw('now()');
         $m->total_amount = CartFacade::getTotal();
         $m->total_qty = CartFacade::getTotalQuantity();
+        $m->note = $request->note;
+        $m->order_status = 0;
 
         if ($m->save()) {
             foreach ($items as $item) {
