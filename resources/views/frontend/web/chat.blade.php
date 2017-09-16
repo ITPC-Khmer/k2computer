@@ -26,56 +26,7 @@
 
                 <div class="customer-details-area">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="customer-details mb-50">
-                                <div class="customer-details-title mb-10">
-                                    <h2>Billing Details</h2>
-                                </div>
-                                <div class="customer-details-form account-form p-20 clear">
-                                    <form action="{{url('checkout')}}" method="post">
 
-                                        {{ csrf_field() }}
-										<span class="form-row-first">
-											<b>First Name <span class="required">*</span></b>
-											<input name="first_name" type="text">
-										</span>
-                                        <span class="form-row-last">
-											<b>Last Name <span class="required">*</span></b>
-											<input name="last_name" type="text">
-										</span>
-                                        <span class="form-row-first">
-											<b>Phone Number <span class="required">*</span></b>
-											<input name="phone" type="text">
-										</span>
-                                        <span class="form-row-last">
-											<b>Email Address <span class="required">*</span></b>
-											<input name="email" type="email">
-										</span>
-
-                                        <span class="form-row-first">
-											<b>Password <span class="required">*</span></b>
-											<input name="password" type="password">
-										</span>
-
-                                        <span class="form-row-last">
-											<b>Company Name </b>
-											<input name="company_name" type="text">
-										</span>
-                                        <span>
-											<b>Address <span class="required">*</span></b>
-											<input name="address" placeholder="Street address" type="text">
-										</span>
-                                        <span>
-											<b>Order Notes</b>
-											<textarea name="note" id="#" style="width: 100%;" rows="5" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                            			</span>
-
-                                        <input class="button" name="apply_coupon" value="Checkout" type="submit">
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="additional-information mb-50">
                                 <div class="customer-details-title mb-10">
@@ -127,6 +78,57 @@
                                 </div>
 
 
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="customer-details mb-50">
+                                <div class="customer-details-title mb-10">
+                                    <h2>Billing Details</h2>
+                                </div>
+                                <div class="customer-details-form account-form p-20 clear">
+                                    <form action="{{url('checkout')}}" method="post">
+
+                                        {{ csrf_field() }}
+										<span class="form-row-first">
+											<b>First Name <span class="required">*</span></b>
+											<input name="first_name" type="text">
+										</span>
+                                        <span class="form-row-last">
+											<b>Last Name <span class="required">*</span></b>
+											<input name="last_name" type="text">
+										</span>
+                                        <span class="form-row-first">
+											<b>Phone Number <span class="required">*</span></b>
+											<input name="phone" type="text">
+										</span>
+                                        <span class="form-row-last">
+											<b>Email Address <span class="required">*</span></b>
+											<input name="email" type="email">
+										</span>
+
+                                        <span class="form-row-first">
+											<b>Password <span class="required">*</span></b>
+											<input name="password" type="password">
+										</span>
+
+                                        <span class="form-row-last">
+											<b>Company Name </b>
+											<input name="company_name" type="text">
+										</span>
+                                        <span>
+											<b>Address <span class="required">*</span></b>
+											<input name="address" placeholder="Street address" type="text">
+										</span>
+                                        <span>
+											<b>Order Notes</b>
+											<textarea name="note" id="#" style="width: 100%;" rows="5" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                            			</span>
+
+                                        <input class="button" name="apply_coupon" value="Checkout" type="submit">
+
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

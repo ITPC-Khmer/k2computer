@@ -92,7 +92,7 @@
         var i = 0;
         $.each(d.items,function () {
             var item = $(this)[0];
-            i += item.quantity;
+            i += (item.quantity-0);
 
 
             cc +=   '                                            <div class="cart-item bb mt-10">\n' +
